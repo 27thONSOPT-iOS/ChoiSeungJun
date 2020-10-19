@@ -50,12 +50,60 @@
                                                     <constraint firstAttribute="bottom" secondItem="mCc-Eh-XAT" secondAttribute="bottom" constant="12" id="tfB-H6-Cxk"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9F-3w-3Jq" userLabel="BannerView">
+                                                <rect key="frame" x="0.0" y="88" width="414" height="420"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="8LY-t4-EYM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="420"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOPT + NETWORKING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hu-KT-duN">
+                                                        <rect key="frame" x="56" y="192" width="302" height="30"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4O-Xd-1MC" userLabel="line">
+                                                        <rect key="frame" x="56" y="222" width="302" height="3"/>
+                                                        <color key="backgroundColor" red="0.95479136710000001" green="0.81199210879999995" blue="0.27433481809999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="3" id="71Y-OS-tuB"/>
+                                                            <constraint firstAttribute="height" constant="3" id="HQ1-BW-Ats"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대학생 연합 IT 창업 동아리의 네트워킹을 위한 플랫폼입니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZy-b3-wDB">
+                                                        <rect key="frame" x="63" y="225" width="288" height="12"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="8LY-t4-EYM" secondAttribute="bottom" id="5So-eI-jxA"/>
+                                                    <constraint firstItem="u4O-Xd-1MC" firstAttribute="leading" secondItem="b9F-3w-3Jq" secondAttribute="leading" constant="56" id="7xa-dC-rWd"/>
+                                                    <constraint firstItem="KZy-b3-wDB" firstAttribute="top" secondItem="u4O-Xd-1MC" secondAttribute="bottom" id="9Ty-aJ-Vl5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="u4O-Xd-1MC" secondAttribute="trailing" constant="56" id="Bdx-q0-d5X"/>
+                                                    <constraint firstAttribute="height" constant="420" id="G3v-wN-yGv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="KZy-b3-wDB" secondAttribute="trailing" constant="63" id="Lpb-Ir-RgN"/>
+                                                    <constraint firstItem="5Hu-KT-duN" firstAttribute="top" secondItem="b9F-3w-3Jq" secondAttribute="top" constant="192" id="Od6-Gt-QGZ"/>
+                                                    <constraint firstItem="u4O-Xd-1MC" firstAttribute="top" secondItem="5Hu-KT-duN" secondAttribute="bottom" id="UHb-4R-lhN"/>
+                                                    <constraint firstItem="8LY-t4-EYM" firstAttribute="top" secondItem="b9F-3w-3Jq" secondAttribute="top" id="Z5p-Ap-t05"/>
+                                                    <constraint firstItem="5Hu-KT-duN" firstAttribute="leading" secondItem="b9F-3w-3Jq" secondAttribute="leading" constant="56" id="cw7-pJ-ZDG"/>
+                                                    <constraint firstItem="KZy-b3-wDB" firstAttribute="leading" secondItem="b9F-3w-3Jq" secondAttribute="leading" constant="63" id="dPf-dj-j1j"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5Hu-KT-duN" secondAttribute="trailing" constant="56" id="fcW-If-AgS"/>
+                                                    <constraint firstItem="8LY-t4-EYM" firstAttribute="leading" secondItem="b9F-3w-3Jq" secondAttribute="leading" id="jUn-sY-Bc6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8LY-t4-EYM" secondAttribute="trailing" id="lU2-oW-Aai"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="b9F-3w-3Jq" secondAttribute="trailing" id="7oY-rC-1Al"/>
+                                            <constraint firstItem="b9F-3w-3Jq" firstAttribute="top" secondItem="caa-NI-pB9" secondAttribute="bottom" id="BfU-TN-KvK"/>
                                             <constraint firstItem="caa-NI-pB9" firstAttribute="top" secondItem="PC7-Y1-VVA" secondAttribute="top" id="X42-sl-ZBM"/>
                                             <constraint firstAttribute="trailing" secondItem="caa-NI-pB9" secondAttribute="trailing" id="cBQ-q7-ssn"/>
                                             <constraint firstItem="caa-NI-pB9" firstAttribute="leading" secondItem="PC7-Y1-VVA" secondAttribute="leading" id="rba-f8-v0Z"/>
+                                            <constraint firstItem="b9F-3w-3Jq" firstAttribute="leading" secondItem="PC7-Y1-VVA" secondAttribute="leading" id="s8O-sm-E37"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -89,6 +137,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="banner" width="375" height="420"/>
         <image name="soptLogo" width="62" height="23"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
