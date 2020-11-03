@@ -11,9 +11,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setViewAttr()
     }
 
-
+    func setViewAttr() {
+        scrollView.delegate = self
+        profileWriteButton.layer.cornerRadius = 5
+    }
+    
 }
 
