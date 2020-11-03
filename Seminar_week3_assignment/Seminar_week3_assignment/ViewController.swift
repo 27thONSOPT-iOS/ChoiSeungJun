@@ -9,13 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var profileWriteButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         setViewAttr()
     }
 
     func setViewAttr() {
-        scrollView.delegate = self
         profileWriteButton.layer.cornerRadius = 5
     }
     
