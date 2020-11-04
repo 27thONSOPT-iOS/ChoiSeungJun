@@ -1,2 +1,3 @@
-# ChoiSeungJun
-최승준
+# iOS CHOI-SEUNGJUN
+
+> empty readme

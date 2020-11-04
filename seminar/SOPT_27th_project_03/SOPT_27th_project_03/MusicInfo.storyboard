@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Music Info View Controller-->
+        <scene sceneID="LH0-1u-wOS">
+            <objects>
+                <viewController storyboardIdentifier="MusicInfoViewController" id="UsT-Q0-2s0" customClass="MusicInfoViewController" customModule="SOPT_27th_project_03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="91U-Q9-rtv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hp-1m-Ore">
+                                <rect key="frame" x="100" y="64" width="214" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOw-JO-U1h">
+                                <rect key="frame" x="100" y="94.5" width="214" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGray3Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F6d-kf-YhZ">
+                                <rect key="frame" x="150" y="161.5" width="114" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="cGZ-P4-I89"/>
+                                    <constraint firstAttribute="height" constant="100" id="lEx-s6-opn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cam-HT-Loq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LOw-JO-U1h" firstAttribute="leading" secondItem="5Hp-1m-Ore" secondAttribute="leading" id="6pa-OM-cNp"/>
+                            <constraint firstItem="F6d-kf-YhZ" firstAttribute="top" secondItem="LOw-JO-U1h" secondAttribute="bottom" constant="50" id="GyH-QP-3rm"/>
+                            <constraint firstItem="LOw-JO-U1h" firstAttribute="top" secondItem="5Hp-1m-Ore" secondAttribute="bottom" constant="10" id="Hs4-bc-ZW4"/>
+                            <constraint firstItem="F6d-kf-YhZ" firstAttribute="leading" secondItem="cam-HT-Loq" secondAttribute="leading" constant="150" id="IcC-AX-EAd"/>
+                            <constraint firstItem="cam-HT-Loq" firstAttribute="trailing" secondItem="5Hp-1m-Ore" secondAttribute="trailing" constant="100" id="V3D-X6-mZs"/>
+                            <constraint firstItem="LOw-JO-U1h" firstAttribute="trailing" secondItem="5Hp-1m-Ore" secondAttribute="trailing" id="hWp-cf-Ngu"/>
+                            <constraint firstItem="5Hp-1m-Ore" firstAttribute="top" secondItem="cam-HT-Loq" secondAttribute="top" constant="20" id="iJs-bH-Inc"/>
+                            <constraint firstItem="5Hp-1m-Ore" firstAttribute="leading" secondItem="cam-HT-Loq" secondAttribute="leading" constant="100" id="pRl-u4-sP0"/>
+                            <constraint firstItem="cam-HT-Loq" firstAttribute="trailing" secondItem="F6d-kf-YhZ" secondAttribute="trailing" constant="150" id="v6R-k3-GCb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="F6d-kf-YhZ" id="JUV-9X-WaD"/>
+                        <outlet property="artistLabel" destination="LOw-JO-U1h" id="OwE-Ul-HDG"/>
+                        <outlet property="titleLabel" destination="5Hp-1m-Ore" id="JbU-gt-Mgo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9S-wz-5kD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-158" y="184"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

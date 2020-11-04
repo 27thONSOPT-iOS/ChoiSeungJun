@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eOv-xW-ctr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="C6X-z4-zBv">
+            <objects>
+                <viewController storyboardIdentifier="CollectionViewController" id="eOv-xW-ctr" customClass="CollectionViewController" customModule="SOPT_27th_project_03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xuz-bf-3eb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PSN-Cf-87T">
+                                <rect key="frame" x="0.0" y="44" width="414" height="221"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PSN-Cf-87T" secondAttribute="height" multiplier="15:8" id="RUz-eQ-jgF"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dnp-zW-1p3">
+                                    <size key="itemSize" width="407" height="185"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PartBannerCell" id="dDt-Ze-Fap" customClass="PartBannerCell" customModule="SOPT_27th_project_03" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="18" width="407" height="185"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="b6I-tc-pXJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="407" height="185"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zhh-9X-hkh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="407" height="185"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Zhh-9X-hkh" firstAttribute="leading" secondItem="b6I-tc-pXJ" secondAttribute="leading" id="FHu-cy-hYE"/>
+                                                <constraint firstAttribute="trailing" secondItem="Zhh-9X-hkh" secondAttribute="trailing" id="bdA-b1-W3w"/>
+                                                <constraint firstItem="Zhh-9X-hkh" firstAttribute="top" secondItem="b6I-tc-pXJ" secondAttribute="top" id="fdN-ks-OVc"/>
+                                                <constraint firstAttribute="bottom" secondItem="Zhh-9X-hkh" secondAttribute="bottom" id="z9z-ER-ZP1"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="407" height="185"/>
+                                        <connections>
+                                            <outlet property="bannerImageView" destination="Zhh-9X-hkh" id="yR7-O8-POb"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="wtI-zo-hQ7">
+                                <rect key="frame" x="145.5" y="211" width="123" height="28"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KLR-94-Qqd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PSN-Cf-87T" firstAttribute="leading" secondItem="KLR-94-Qqd" secondAttribute="leading" id="CG0-1r-AVW"/>
+                            <constraint firstItem="KLR-94-Qqd" firstAttribute="trailing" secondItem="PSN-Cf-87T" secondAttribute="trailing" id="D7m-an-32P"/>
+                            <constraint firstItem="wtI-zo-hQ7" firstAttribute="top" secondItem="PSN-Cf-87T" secondAttribute="bottom" constant="-54" id="a2x-qD-ssG"/>
+                            <constraint firstItem="wtI-zo-hQ7" firstAttribute="centerX" secondItem="PSN-Cf-87T" secondAttribute="centerX" id="cBl-ic-e5f"/>
+                            <constraint firstItem="PSN-Cf-87T" firstAttribute="top" secondItem="KLR-94-Qqd" secondAttribute="top" id="fnB-0e-xOf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="PSN-Cf-87T" id="EZT-sC-trT"/>
+                        <outlet property="pageController" destination="wtI-zo-hQ7" id="GdF-nj-sa3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KOT-SH-Vg6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123.18840579710145" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
