@@ -9,10 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var rootView: UIView!
     @IBOutlet weak var profileCollectionView: UICollectionView!
     @IBOutlet weak var profileWriteButton: UIButton!
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var topViewHeightConstraint: NSLayoutConstraint!
     
     var profiles: [Profile] = []
+    var originFrame: CGRect?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +43,7 @@ class ViewController: UIViewController {
 
     func setViewAttr() {
         profileWriteButton.layer.cornerRadius = 5
+        originFrame = topView.frame
     }
     
 }
@@ -81,5 +86,23 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 41, left: 24, bottom: 0, right: 24)
+    }
+}
+
+extension ViewController: UIScrollViewDelegate {
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        UIView.animate(withDuration: 0.5, animations: {
+            self.topViewHeightConstraint.constant = 88
+            self.rootView.layoutIfNeeded()
+        })
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if (decelerate) {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.topViewHeightConstraint.constant = 0
+                self.rootView.layoutIfNeeded()
+            })
+        }
     }
 }

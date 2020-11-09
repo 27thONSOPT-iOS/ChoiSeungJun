@@ -175,6 +175,9 @@
                     <connections>
                         <outlet property="profileCollectionView" destination="E3I-Yt-C1C" id="20t-sr-AY6"/>
                         <outlet property="profileWriteButton" destination="ddb-A0-gCG" id="qCe-7Z-c5x"/>
+                        <outlet property="rootView" destination="W8c-KT-I11" id="tMN-WX-8NY"/>
+                        <outlet property="topView" destination="VVr-zd-4Ac" id="GzO-fP-HwC"/>
+                        <outlet property="topViewHeightConstraint" destination="BdP-Hj-Naj" id="4uj-IS-VJv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhF-By-f5r" sceneMemberID="firstResponder"/>
