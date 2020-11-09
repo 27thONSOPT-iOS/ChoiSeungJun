@@ -19,7 +19,7 @@ class SignInViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
+        super.viewDidAppear(animated)
         setResult()
     }
 
@@ -35,7 +35,7 @@ class SignInViewController: UIViewController {
     func setResult() {
         if let part = self.part,
            let name = self.name {
-            self.partLabel.text = "\(part)의 \(name)님 하이요"
+            self.partLabel.text = "\(part) 파트의 \(name)님 하2"
         }
     }
     
