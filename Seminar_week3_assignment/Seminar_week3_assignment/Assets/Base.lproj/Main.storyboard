@@ -293,6 +293,7 @@
                     <connections>
                         <outlet property="nameTextField" destination="uOw-oh-KLc" id="msL-cc-I68"/>
                         <outlet property="partTextField" destination="hOI-op-i9X" id="qmd-AC-AWf"/>
+                        <outlet property="rootView" destination="xBY-jE-UUD" id="bm2-JT-xfi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uYU-Kt-wbg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
