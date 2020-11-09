@@ -62,18 +62,58 @@
 		BD00F1C52551376E00F2E9CF /* Seminar_week3_assignment */ = {
 			isa = PBXGroup;
 			children = (
-				BD00F1C62551376E00F2E9CF /* AppDelegate.swift */,
-				BDF2308D25525EFB00CA20D3 /* ProfileViewCell.swift */,
-				BD00F1C82551376E00F2E9CF /* SceneDelegate.swift */,
-				BDF2308A25514C7B00CA20D3 /* HeaderViewCell.swift */,
-				BDF230902552615700CA20D3 /* Profile.swift */,
-				BD00F1CA2551376E00F2E9CF /* ViewController.swift */,
-				BD00F1CC2551376E00F2E9CF /* Main.storyboard */,
-				BD00F1CF2551377000F2E9CF /* Assets.xcassets */,
-				BD00F1D12551377000F2E9CF /* LaunchScreen.storyboard */,
-				BD00F1D42551377000F2E9CF /* Info.plist */,
+				BDAFA5BD2558D8AD00615866 /* Pages */,
+				BDAFA5BB2558D87D00615866 /* Domain */,
+				BDAFA5BA2558D83D00615866 /* Assets */,
+				BDAFA5B92558D81F00615866 /* App */,
 			);
 			path = Seminar_week3_assignment;
+			sourceTree = "<group>";
+		};
+		BDAFA5B92558D81F00615866 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BD00F1C82551376E00F2E9CF /* SceneDelegate.swift */,
+				BD00F1D42551377000F2E9CF /* Info.plist */,
+				BD00F1C62551376E00F2E9CF /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BDAFA5BA2558D83D00615866 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BD00F1CC2551376E00F2E9CF /* Main.storyboard */,
+				BD00F1D12551377000F2E9CF /* LaunchScreen.storyboard */,
+				BD00F1CF2551377000F2E9CF /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		BDAFA5BB2558D87D00615866 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				BDAFA5BC2558D88900615866 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BDAFA5BC2558D88900615866 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDF230902552615700CA20D3 /* Profile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDAFA5BD2558D8AD00615866 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				BDF2308D25525EFB00CA20D3 /* ProfileViewCell.swift */,
+				BDF2308A25514C7B00CA20D3 /* HeaderViewCell.swift */,
+				BD00F1CA2551376E00F2E9CF /* ViewController.swift */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Seminar_week3_assignment/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Seminar_week3_assignment/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Seminar_week3_assignment/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Seminar_week3_assignment/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
