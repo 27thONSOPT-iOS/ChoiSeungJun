@@ -13,6 +13,9 @@
 		BD00F1CE2551376E00F2E9CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD00F1CC2551376E00F2E9CF /* Main.storyboard */; };
 		BD00F1D02551377000F2E9CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD00F1CF2551377000F2E9CF /* Assets.xcassets */; };
 		BD00F1D32551377000F2E9CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD00F1D12551377000F2E9CF /* LaunchScreen.storyboard */; };
+		BDBCA9632558DC5C00026161 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBCA9622558DC5C00026161 /* TabBarViewController.swift */; };
+		BDBCA9662558DC8800026161 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBCA9652558DC8800026161 /* SignInViewController.swift */; };
+		BDBCA9692558EDFB00026161 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBCA9682558EDFB00026161 /* LoginViewController.swift */; };
 		BDF2308B25514C7B00CA20D3 /* HeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF2308A25514C7B00CA20D3 /* HeaderViewCell.swift */; };
 		BDF2308E25525EFB00CA20D3 /* ProfileViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF2308D25525EFB00CA20D3 /* ProfileViewCell.swift */; };
 		BDF230912552615700CA20D3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF230902552615700CA20D3 /* Profile.swift */; };
@@ -27,6 +30,9 @@
 		BD00F1CF2551377000F2E9CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD00F1D22551377000F2E9CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD00F1D42551377000F2E9CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDBCA9622558DC5C00026161 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		BDBCA9652558DC8800026161 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		BDBCA9682558EDFB00026161 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BDF2308A25514C7B00CA20D3 /* HeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewCell.swift; sourceTree = "<group>"; };
 		BDF2308D25525EFB00CA20D3 /* ProfileViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewCell.swift; sourceTree = "<group>"; };
 		BDF230902552615700CA20D3 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -112,6 +118,9 @@
 				BDF2308D25525EFB00CA20D3 /* ProfileViewCell.swift */,
 				BDF2308A25514C7B00CA20D3 /* HeaderViewCell.swift */,
 				BD00F1CA2551376E00F2E9CF /* ViewController.swift */,
+				BDBCA9622558DC5C00026161 /* TabBarViewController.swift */,
+				BDBCA9652558DC8800026161 /* SignInViewController.swift */,
+				BDBCA9682558EDFB00026161 /* LoginViewController.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -186,10 +195,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDBCA9692558EDFB00026161 /* LoginViewController.swift in Sources */,
 				BD00F1CB2551376E00F2E9CF /* ViewController.swift in Sources */,
 				BDF230912552615700CA20D3 /* Profile.swift in Sources */,
 				BD00F1C72551376E00F2E9CF /* AppDelegate.swift in Sources */,
 				BD00F1C92551376E00F2E9CF /* SceneDelegate.swift in Sources */,
+				BDBCA9662558DC8800026161 /* SignInViewController.swift in Sources */,
+				BDBCA9632558DC5C00026161 /* TabBarViewController.swift in Sources */,
 				BDF2308B25514C7B00CA20D3 /* HeaderViewCell.swift in Sources */,
 				BDF2308E25525EFB00CA20D3 /* ProfileViewCell.swift in Sources */,
 			);
