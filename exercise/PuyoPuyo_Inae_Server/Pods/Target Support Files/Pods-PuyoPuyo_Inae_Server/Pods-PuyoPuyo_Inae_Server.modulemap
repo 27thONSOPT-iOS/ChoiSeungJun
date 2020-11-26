@@ -1,0 +1,6 @@
+framework module Pods_PuyoPuyo_Inae_Server {
+  umbrella header "Pods-PuyoPuyo_Inae_Server-umbrella.h"
+
+  export *
+  module * { export * }
+}
